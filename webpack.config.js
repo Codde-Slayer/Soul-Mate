@@ -22,6 +22,11 @@ module.exports = {
 				presets: ['react'] 
 			},
 		}]
+	  },
+	  devServer: {
+		static: path.join(__dirname, './client/dist'),
+		compress: true,
+		port: 8000
 	  }
 	  
   };
